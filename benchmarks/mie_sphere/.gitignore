@@ -1,0 +1,10 @@
+__pycache__/
+results/*
+!results/b0_radius_scan_summary.csv
+figures/*
+!figures/*.png
+validation/*
+!validation/b0_validation.json
+!validation/b0_manifest.json
+report/*
+!report/mie_sphere_benchmark.md

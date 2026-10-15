@@ -1,0 +1,29 @@
+{
+  "file": "synthetic_epsilon.csv",
+  "role": "synthetic teaching input for code examples and numerical checks",
+  "source_class": "synthetic",
+  "license": "MIT",
+  "generated_by": "generate_synthetic_epsilon.py",
+  "generation_command": "python data/generate_synthetic_epsilon.py",
+  "model": {
+    "type": "single damped Lorentz oscillator",
+    "epsilon_infinity": 4.0,
+    "oscillator_strength_ev2": 14.0,
+    "resonance_ev": 4.2,
+    "damping_ev": 0.8,
+    "energy_conversion_constant_ev_nm": 1239.8419843320025
+  },
+  "conventions": {
+    "time_dependence": "exp(-i omega t)",
+    "dielectric_function": "epsilon1 + i epsilon2",
+    "passive_input": "epsilon2 >= 0",
+    "wavelength_unit": "nm",
+    "epsilon_unit": "dimensionless",
+    "wavelength_range_nm": [
+      200,
+      800
+    ],
+    "wavelength_step_nm": 10
+  },
+  "sha256": "e0d22f915a71c927b248f085083eead4a5b79364ea3880033521f7d189ed6396"
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "checks": {
+    "input_refractive_index_consistency": true,
+    "coefficient_sum_matches_library_total_in_signal_region": true,
+    "energy_identity": true,
+    "passive_cross_sections_within_numerical_floor": true,
+    "multipole_lmax_3_converged_for_scan": true,
+    "existing_cdm_mie_matches_exact_E1_in_signal_region": true
+  },
+  "metrics": {
+    "input_n_max_abs_error": 5.9041660449565825e-12,
+    "input_kappa_max_abs_error": 1.4496182032530669e-12,
+    "coefficient_vs_library_cext_max_rel_error_all_points": 2.957436054662176e-07,
+    "coefficient_vs_library_csca_max_rel_error_all_points": 8.989320916674671e-10,
+    "coefficient_vs_library_cext_max_rel_error_signal_region": 2.957436054662176e-07,
+    "coefficient_vs_library_csca_max_rel_error_signal_region": 8.989320916674671e-10,
+    "coefficient_vs_library_cext_max_abs_error_nm2": 1.4918792445861584e-07,
+    "coefficient_vs_library_csca_max_abs_error_nm2": 3.0877579139387823e-13,
+    "energy_max_relative_residual": 2.2020907775134753e-16,
+    "minimum_total_cross_section_nm2": 8.840087075750761e-07,
+    "minimum_cross_section_relative_to_global_peak": 6.148124022299006e-09,
+    "lmax3_ext_max_relative_error_signal_region": 2.8208304605961945e-07,
+    "lmax3_sca_max_relative_error_signal_region": 4.569310936071445e-14,
+    "existing_cdm_mie_vs_exact_E1_max_rel_error_signal_region": 1.2083396467168045e-10
+  },
+  "conventions": {
+    "time_dependence": "exp(-i omega t)",
+    "passive_epsilon": "epsilon1 + i epsilon2, epsilon2 >= 0",
+    "miepython_index": "n - i kappa",
+    "length_unit": "nm",
+    "cross_section_unit": "nm^2"
+  },
+  "software": {
+    "python": "3.13.0",
+    "miepython": "3.2.0",
+    "numpy": "2.3.1",
+    "pandas": "2.3.1",
+    "matplotlib": "3.10.9"
+  },
+  "input": {
+    "path": "synthetic_epsilon.csv",
+    "source_class": "synthetic teaching input",
+    "sha256": "e0d22f915a71c927b248f085083eead4a5b79364ea3880033521f7d189ed6396"
+  }
+}

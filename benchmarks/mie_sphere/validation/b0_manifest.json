@@ -1,0 +1,92 @@
+{
+  "benchmark": "homogeneous isotropic sphere Mie-series comparison",
+  "source_class": "synthetic teaching input",
+  "command": "python benchmarks/mie_sphere/mie_sphere_benchmark.py",
+  "input": {
+    "basename": "synthetic_epsilon.csv",
+    "sha256": "e0d22f915a71c927b248f085083eead4a5b79364ea3880033521f7d189ed6396"
+  },
+  "configuration": {
+    "medium_refractive_index": 1.33,
+    "radii_nm": [
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      8.0,
+      10.0
+    ],
+    "primary_radius_nm": 4.0,
+    "wavelength_range_nm": [
+      200.0,
+      800.0
+    ]
+  },
+  "conventions": {
+    "time_dependence": "exp(-i omega t)",
+    "passive_epsilon": "epsilon1 + i epsilon2, epsilon2 >= 0",
+    "miepython_index": "n - i kappa",
+    "length_unit": "nm",
+    "cross_section_unit": "nm^2"
+  },
+  "software": {
+    "python": "3.13.0",
+    "miepython": "3.2.0",
+    "numpy": "2.3.1",
+    "pandas": "2.3.1",
+    "matplotlib": "3.10.9"
+  },
+  "validation_status": "PASS",
+  "benchmark_script_sha256": "39e28a8eea85bc68d13f235fc4c469f4a8ba2cae2d07d7ca93378e6ea2871c1a",
+  "artifacts": [
+    {
+      "path": "benchmarks/mie_sphere/results/b0_cross_sections_radius_4nm.csv",
+      "checked_in": false,
+      "size_bytes": 66591,
+      "sha256": "cdac6f61a50931884491c30b4a59052b6474aacf3c3c88559ad980230ba62bc8"
+    },
+    {
+      "path": "benchmarks/mie_sphere/results/b0_cross_sections_all_radii.csv",
+      "checked_in": false,
+      "size_bytes": 457116,
+      "sha256": "f5924efda5ee78bcb8743375367622b4b1147d7fa43c99bdba7e60569a2af614"
+    },
+    {
+      "path": "benchmarks/mie_sphere/results/b0_multipoles_long.csv",
+      "checked_in": false,
+      "size_bytes": 409876,
+      "sha256": "dbc143a0fc0cdcb2420f4af8f3de805bdc13e1c07ae63cf52e3810d06488aef7"
+    },
+    {
+      "path": "benchmarks/mie_sphere/results/b0_radius_scan_summary.csv",
+      "checked_in": true,
+      "size_bytes": 2507,
+      "sha256": "10f562f29cc6f316b9e924f42cbf6c3ed9215b333395e7dc8a4260cd0cc1690c"
+    },
+    {
+      "path": "benchmarks/mie_sphere/figures/b0_4nm_overview.png",
+      "checked_in": true,
+      "size_bytes": 202022,
+      "sha256": "d8ad17c9dcade525199d6a704746017314d3930ea3bd89bce0d6b664f3ca4733"
+    },
+    {
+      "path": "benchmarks/mie_sphere/figures/b0_radius_scan.png",
+      "checked_in": true,
+      "size_bytes": 129193,
+      "sha256": "b0fed8e465f04f13364dbb4ffa1907c0442ac155d865f04be879acc080abf434"
+    },
+    {
+      "path": "benchmarks/mie_sphere/validation/b0_validation.json",
+      "checked_in": true,
+      "size_bytes": 1963,
+      "sha256": "dfc3547e8bdbef76ef79dfec4b800b823456168081994dae1a9fa3f7cda28f3b"
+    },
+    {
+      "path": "benchmarks/mie_sphere/report/mie_sphere_benchmark.md",
+      "checked_in": true,
+      "size_bytes": 2041,
+      "sha256": "684c5559cc1872c733987be993451dda1120a2db38c4f1612c9a6d6bf34a4a99"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+
+# Generated figures and spectra from the runnable examples.
+CDM_py/outputs/
+benchmarks/mie_sphere/results/*
+!benchmarks/mie_sphere/results/b0_radius_scan_summary.csv
+benchmarks/mie_sphere/figures/*
+!benchmarks/mie_sphere/figures/*.png
+benchmarks/mie_sphere/validation/*
+!benchmarks/mie_sphere/validation/b0_validation.json
+!benchmarks/mie_sphere/validation/b0_manifest.json
+benchmarks/mie_sphere/report/*
+!benchmarks/mie_sphere/report/mie_sphere_benchmark.md
+
+# Local research documents and packaged archives are deliberately excluded.
+*.zip
+*.7z
+*.rar
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+*.xls
+*.tmp
+~$*
